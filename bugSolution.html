@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is initially visible.
+  </div>
+  <script>
+    //Correct way to change the content of the div
+    document.getElementById("myDiv").innerHTML = ""; //Clear existing content
+    document.getElementById("myDiv").innerHTML = "<p>This text replaces the previous content correctly.</p>";
+  </script>
+</body>
+</html>
